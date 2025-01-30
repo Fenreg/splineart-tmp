@@ -1,3 +1,6 @@
+name: "ci-matrix"
+on: pull_request
+
 jobs:
   python_tests:
     runs-on: ${{ matrix.os }}
