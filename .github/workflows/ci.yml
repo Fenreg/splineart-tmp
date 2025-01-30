@@ -26,17 +26,16 @@ jobs:
       - name: Configure
         run:
           cmake -S . -B .build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug -DBUILD_EXAMPLES=ON;
-          echo -e "Hello\n"
-          # cppcheck --enable=missingInclude,unusedFunction,warning,style,portability,performance -q --project=.build/compile_commands.json --suppressions-list=.cppcheck 2> cppcheck_err.txt
+          cppcheck --enable=missingInclude,unusedFunction,warning,style,portability,performance -q --project=.build/compile_commands.json --suppressions-list=.cppcheck 2> cppcheck_err.txt;
         shell: pixi run bash {0}
       # aftercare
       - name: Check for errors
         run:
           if [[ -s cppcheck_err.txt ]];
           then
-            cat cppcheck_err.txt
-            exit -1
-          fi
+            cat cppcheck_err.txt;
+            exit -1;
+          fi;
 
   tests:
     runs-on: ${{ matrix.os }}
