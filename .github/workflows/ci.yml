@@ -7,42 +7,26 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: prefix-dev/setup-pixi@v0.8.1
-        with:
-          pixi-version: v0.40.2
-          cache: true
-
-      - run: pixi run precom
-
-  python_tests:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest]
-        py-version:
-          - "3.10"
-          - 3.11
-          - 3.12
-    steps:
-      - name: Set up Python ${{ matrix.py-version }}
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{ matrix.py-version }}
+        - uses: actions/checkout@v3
+        - uses: actions/setup-python@v3
+        - uses: pre-commit/action@v3.0.0
 
   tests:
-    needs: pre-commit
     runs-on: ${{ matrix.os }}
+    needs: [pre-commit]
     strategy:
-      matrix:
-        os:
-            - ubuntu-latest
-            - macos-latest
+        fail-fast: false
+        matrix:
+            os:
+                - ubuntu-latest
+                - macos-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: prefix-dev/setup-pixi@v0.8.1
-        with:
-          pixi-version: v0.40.2
-          cache: true
+        - uses: actions/checkout@v3
 
-      - run: pixi run test
+        - uses: prefix-dev/setup-pixi@v0.8.1
+          with:
+              pixi-version: v0.40.2
+              cache: true
+
+        - name: Run tests
+          run: pixi run test
