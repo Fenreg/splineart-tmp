@@ -49,7 +49,7 @@ jobs:
       runs-on: ubuntu-latest
       needs: build-doc
 
-      # Don't deploy on forks or outside of main
+      # Don't deploy on forks or outside of main #minor change
       if: github.repository == 'Fenreg/splineart-tmp' && github.ref == 'ref/heads/main'
       steps:
         - name: Deploy to GitHub Pages
