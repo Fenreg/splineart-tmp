@@ -21,16 +21,11 @@ jobs:
       - name: generate static documentation files
         run: pixi run doc
 
-      - name: move up the doc
-        run:
-          mv doc/build/* doc/html/ && echo "DBG > Move succesfull."
-        shell: pixi run bash {0}
-
       - name: Upload static files as artifact
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: doc/html
+          path: "doc/build/html"
 
   # Deployment job
   deploy:
