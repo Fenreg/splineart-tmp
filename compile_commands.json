@@ -1,0 +1,39 @@
+[
+{
+  "directory": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/build",
+  "command": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ -I/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include/opencv4 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include -g -o CMakeFiles/splinart.dir/src/shapes.cpp.o -c /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/src/shapes.cpp",
+  "file": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/src/shapes.cpp",
+  "output": "CMakeFiles/splinart.dir/src/shapes.cpp.o"
+},
+
+{
+  "directory": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/build",
+  "command": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ -I/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include/opencv4 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include -g -o CMakeFiles/splinart-cpp.dir/src/command_line.cpp.o -c /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/src/command_line.cpp",
+  "file": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/src/command_line.cpp",
+  "output": "CMakeFiles/splinart-cpp.dir/src/command_line.cpp.o"
+},
+
+{
+  "directory": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/build",
+  "command": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ -I/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include/opencv4 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include -g -c /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/shapes.hpp",
+  "file": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/shapes.hpp"
+},
+
+{
+  "directory": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/build",
+  "command": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ -I/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include/opencv4 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include -g -c /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/build_img.hpp",
+  "file": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/build_img.hpp"
+},
+
+{
+  "directory": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/build",
+  "command": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ -I/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include/opencv4 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include -g -c /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/spline.hpp",
+  "file": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/spline.hpp"
+},
+
+{
+  "directory": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/build",
+  "command": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/bin/x86_64-conda-linux-gnu-c++ -I/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include/opencv4 -fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/.pixi/envs/default/include -g -c /home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/imshow.hpp",
+  "file": "/home/user-777/analyses/E003_2025-01_git-ci/splineart-tmp/include/splinart/imshow.hpp"
+}
+]
