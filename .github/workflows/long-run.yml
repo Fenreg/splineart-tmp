@@ -1,20 +1,19 @@
 name: "long check"
 
 on:
-    pull_request:
     schedule:
-        - cron: "0/4 0 * * *"
+        - cron: "0/5 0 * * *"
 
 jobs:
     check_new_commit:
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         outputs:
             nb_commits: ${{ steps.new_commits.outputs.nb_commits }}
         steps:
             - uses: actions/checkout@v3
 
             - id: new_commits
-              run: echo "nb_commits=$(git log --oneline --since '4 minutes ago' | wc -l)" >> $GITHUB_OUTPUT
+              run: echo "nb_commits=$(git log --oneline --since '5 minutes ago' | wc -l)" >> $GITHUB_OUTPUT
 
     clang-tidy-check:
         needs: check_new_commit
@@ -32,8 +31,8 @@ jobs:
               run: pixi add clang-tools pip
 
             - name: ccompdb installation
-              run: pip install compdb
               shell: pixi run bash {0}
+              run: pip install compdb
 
             - name: Configure
               shell: pixi run bash {0}

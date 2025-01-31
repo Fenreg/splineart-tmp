@@ -8,3 +8,7 @@ xml
 pixi-test/*
 cppcheck_err.txt
 clang.err
+
+# pixi environments
+.pixi
+*.egg-info
