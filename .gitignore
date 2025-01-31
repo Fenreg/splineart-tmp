@@ -1,6 +1,7 @@
 .pixi
 .DS_Store
-.build
+.build/*
+build/*
 .cache
 xml
 pixi-test/*
