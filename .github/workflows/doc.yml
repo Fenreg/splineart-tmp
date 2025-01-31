@@ -1,7 +1,13 @@
 name: "CI - doc"
 
-#on: pull_request
-on: [push]
+on:
+  push:
+      branches:
+          - main
+  pull_request:
+      branches:
+          - main
+
 
 # Allow one concurrent deployment
 concurrency:
@@ -10,6 +16,8 @@ concurrency:
 
 jobs:
   build-doc:
+    # Don't run on forks
+    if: github.repository == 'Fenreg/splineart-tmp'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -29,6 +37,8 @@ jobs:
 
   # Deployment job
   deploy:
+      # Don't deploy on forks or outside of main
+      if: github.repository == 'Fenreg/splineart-tmp' && github.ref == 'ref/heads/main'
       environment:
         name: github-pages
         url: ${{ steps.deployment.outputs.page_url }}
