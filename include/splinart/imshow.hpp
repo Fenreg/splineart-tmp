@@ -14,7 +14,7 @@ namespace splinart
     ///
     /// @param img The image to draw
     ///
-    const inline void imshow(xt::xtensor<double, 3>& img)
+    inline void imshow(xt::xtensor<double, 3>& img)
     {
         const int width  = static_cast<int>(img.shape(0));
         const int height = static_cast<int>(img.shape(1));

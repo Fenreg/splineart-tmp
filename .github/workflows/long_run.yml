@@ -41,5 +41,5 @@ jobs:
                   cmake . -Bbuild -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=Debug -DBUILD_DEMOS=ON
                   compdb -p build list > compile_commands.json
 
-          # - name: run clang-tidy on splinart-cpp
-          #   run: pixi run run-clang-tidy
+            - name: run clang-tidy on splinart-cpp
+              run: pixi run run-clang-tidy

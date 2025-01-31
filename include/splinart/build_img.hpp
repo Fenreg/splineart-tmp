@@ -21,8 +21,7 @@ namespace splinart
     ///
     /// @param color Define the RGBA color of the pixels.
     ///
-    const inline void
-    draw_pixel(xt::xtensor<double, 3>& img, const xt::xtensor<double, 2>& spline, xt::xtensor_fixed<double, xt::xshape<4>> color)
+    inline void draw_pixel(xt::xtensor<double, 3>& img, const xt::xtensor<double, 2>& spline, xt::xtensor_fixed<double, xt::xshape<4>> color)
     {
         const std::size_t width  = img.shape(0);
         const std::size_t height = img.shape(1);
