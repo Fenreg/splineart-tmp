@@ -2,8 +2,7 @@
 .DS_Store
 .build/*
 build/*
-!doc/html
-doc/*
+doc/build/*
 .cache
 xml
 pixi-test/*
