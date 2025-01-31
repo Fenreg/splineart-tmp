@@ -38,8 +38,8 @@ jobs:
 
   # Deployment job
   deploy:
-      # Don't deploy on forks or outside of main
-      if: github.repository == 'Fenreg/splineart-tmp' && github.ref == 'ref/heads/main'
+      # Don't deploy on forks or outside of main  ## && github.ref == 'ref/heads/main'
+      if: github.repository == 'Fenreg/splineart-tmp'
       environment:
         name: github-pages
         url: ${{ steps.deployment.outputs.page_url }}
